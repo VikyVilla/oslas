@@ -18,9 +18,6 @@ app.get('/api', function(req, res) {
 app.use('/api/users', require(__root + 'user/UserController'));
 app.use('/api/tweet', require(__root + 'tweet/TweetRoute'))
 
-// const AuthController = require(__root + 'auth/AuthController')(db, app);
-// app.use('/api/auth', AuthController);
-
 // starting server
 const port = process.env.PORT || 5000
 app.listen(port, function() {
